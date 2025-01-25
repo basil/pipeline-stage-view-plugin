@@ -100,9 +100,16 @@
             <dependency>
                 <groupId>io.jenkins.tools.bom</groupId>
                 <artifactId>bom-${jenkins.baseline}.x</artifactId>
-                <version>3850.vb_c5319efa_e29</version>
+                <version>4023.va_eeb_b_4e45f07</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <!-- TODO until in BOM -->
+            <dependency>
+                <groupId>org.jenkins-ci.plugins</groupId>
+                <artifactId>pipeline-input-step</artifactId>
+                <!-- TODO https://github.com/jenkinsci/pipeline-input-step-plugin/pull/203 -->
+                <version>511.v3870e7976f6e</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
